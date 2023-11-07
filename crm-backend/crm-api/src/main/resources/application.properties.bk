@@ -1,0 +1,33 @@
+server.port= 4210
+
+springdoc.api-docs.path=/openapi/v3/api-docs
+springdoc.swagger-ui.path=/openapi/swagger-ui.html
+
+# ais-new-service db
+spring.datasource.ais.url=jdbc:oracle:thin:@//10.129.28.20:1521/PDB_AIS_NEW_UAT
+spring.datasource.ais.username=AIS_SERVICE_DEV
+spring.datasource.ais.password=Tpf1c0#987
+spring.datasource.ais.driver-class-name=oracle.jdbc.OracleDriver
+
+spring.datasource.ais.hikari.connectionTimeout=20000
+spring.datasource.ais.hikari.maximumPoolSize=5
+
+logging.level.org.springframework.jdbc.core = TRACE
+# Workflow Engine Activiti22 Database
+spring.datasource.process-engine.url=jdbc:oracle:thin:@//10.129.28.20:1521/PDB_AIS_NEW_UAT
+spring.datasource.process-engine.username=AIS_WF_DEV
+spring.datasource.process-engine.password=Tpf1c0#987
+spring.datasource.process-engine.driver-class-name=oracle.jdbc.OracleDriver
+
+spring.datasource.process-engine.hikari.connectionTimeout=20000
+spring.datasource.process-engine.hikari.maximumPoolSize=5
+
+
+# Log4J
+app.log.location=logs
+logging.file.name=${app.log.location}/ais-new-be.log
+
+# App Settings
+app.user.defaultPassword=Fico@123
+app.jwtSecret=jwt-ais-tp
+app.jwtExpirationInSeconds= 86400000

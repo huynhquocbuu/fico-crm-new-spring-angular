@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/crm-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-app/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-configuration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-configuration/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-infrastructure/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-infrastructure/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-shared/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/building-blocks/crm-shared/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/crm-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/crm-backend/crm-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
