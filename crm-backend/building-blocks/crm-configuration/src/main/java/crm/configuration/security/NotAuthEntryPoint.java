@@ -29,7 +29,7 @@ public class NotAuthEntryPoint implements AuthenticationEntryPoint {
 
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
-        response.setStatus(HttpServletResponse.SC_FORBIDDEN);
+        response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
 
         PrintWriter out = response.getWriter();
         out.print(respBody);

@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Data
 public class ResponseWrapper <T> {
-    private String status;
     @JsonProperty("error-code")
     private String errorCode;
 

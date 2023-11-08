@@ -25,13 +25,13 @@ public class JwtUtil {
 
         Map<String, Object> claims = new HashMap<>();
         claims.put("roles", roleNames);
-        claims.put("last-updated-timestamp", user.getAuditInfo().getLastUpdatedAt());
+        //claims.put("last-updated-timestamp", user.getAuditInfo().getLastUpdatedAt());
 
         return Jwts.builder()
                 .setClaims(claims)
                 .setSubject(user.getUsername())
                 .setId(user.getId().toString())
-                .setIssuer("AIS-SYSTEM")
+                .setIssuer("CRM-SYSTEM")
                 .setIssuedAt(new Date())
                 .setExpiration(new Date((new Date()).getTime() + jwtExpirationInSeconds))
                 .signWith(SignatureAlgorithm.HS512, jwtSecret)

@@ -1,34 +1,48 @@
 package crm.infrastructure.entities;
 
-import crm.infrastructure.entities.embedded.AuditInfoEmbedded;
+
 import crm.shared.enums.EAuthType;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.relational.core.mapping.Embedded;
-import org.springframework.data.relational.core.mapping.MappedCollection;
-import org.springframework.data.relational.core.mapping.Table;
+import jakarta.persistence.*;
+import lombok.*;
 
 import java.util.HashSet;
 import java.util.Set;
 
-@Table("USERS")
+@Entity
+@Table(name = "users",
+        uniqueConstraints = {
+                @UniqueConstraint(columnNames = "username")
+        })
 @Getter
 @Setter
 @Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(length = 100)
     private String username;
+
+    @Column(length = 100, name = "full_name")
     private String fullName;
+
+    @Enumerated(EnumType.STRING)
+    @Column(length = 20, name = "auth_type")
     private EAuthType authType;
+
+    @Column(length = 100)
     private String email;
+
+    @Column(length = 200)
     private String password;
 
-    @MappedCollection(idColumn = "USER_ID", keyColumn = "USER_ID")
-    private Set<RoleRef> roles = new HashSet<>();
-
-    @Embedded.Nullable
-    private AuditInfoEmbedded auditInfo;
+    @ManyToMany
+    @JoinTable(
+            name = "user_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    Set<Role> roles = new HashSet<>();
 }
