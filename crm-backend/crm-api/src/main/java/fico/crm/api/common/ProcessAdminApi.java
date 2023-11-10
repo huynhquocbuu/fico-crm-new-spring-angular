@@ -30,7 +30,7 @@ public class ProcessAdminApi {
     public ResponseEntity<ResponseWrapper<String>> login
             (@RequestParam(name = "process-file") MultipartFile processFile,
              @RequestParam(name = "process-name") String processName,
-             @RequestParam(name = "version-name") String versionName) throws Exception {
+             @RequestParam(name = "version") String versionName) throws Exception {
         InputStream processInputStream = processFile.getInputStream();
         String processId = useCase.deploy(
                 "fico-crm-wf",
