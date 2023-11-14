@@ -55,7 +55,7 @@
 ## 12.0.0
 **Migration Guide**
 - Update your project to Angular 12.
-- Update app.menuitem.component.ts
+- Update menu-item.component.ts
 - Update theme files and layout files.
 
 **Implemented New Features and Enhancements:**
@@ -76,7 +76,7 @@
 ## 10.1.0
 
 **Migration Guide**
-- Update app files(app.menuitem.component.ts etc..).
+- Update app files(menu-item.component.ts etc..).
 - Update theme files and layout files.
 
 **Implemented New Features and Enhancements:**
@@ -98,14 +98,14 @@
 Angular 9 and PrimeNG 9
 - Update dependencies with <a href="https://angular.io/cli/update">ng update</a>.
 - Update theme.css and layout.css files.
-- Update app.menu.component.ts and app.menu.component.html while retaining your MenuModel.
-- Include app.menuitem.component.ts under app folder and define it app.module.ts with declarations property.
-- Include app.menu.service.ts under app folder and define it app.module.ts with providers property.
+- Update menu.component.ts and app.menu.component.html while retaining your MenuModel.
+- Include menu-item.component.ts under app folder and define it app.module.ts with declarations property.
+- Include menu.service.ts under app folder and define it app.module.ts with providers property.
 
 #### 7.0.0 to 8.0.0
 - Update your project to Angular 8 with ng update. View the official update guide -<a href="https://update.angular.io/">https://update.angular.io/</a>- for more information.
 - Update app.component.ts.
-- Update app.menu.component.ts.
+- Update menu.component.ts.
 - Update layout css files.
 - Update theme css files.
 
@@ -130,7 +130,7 @@ and improves behaviors of the layout menus.
 #### 5.2.0 to 5.2.1
 - Update app.component.ts.
 - Update app.topbar.component.html.
-- Update app.menu.component.ts and app.menu.component.html.
+- Update menu.component.ts and app.menu.component.html.
 - Update layout css files.
 - Update theme css files.
 
@@ -138,23 +138,23 @@ and improves behaviors of the layout menus.
 Adds support for PrimeNG 5.2.0 (e.g. TurboTable), replaces nanoscroller with PrimeNG ScrollPanel.
 - Remove nanoscroller as it is replaced by ScrollPanel component of PrimeNG.
 - Update app.component.ts.
-- Update app.menu.component.ts and app.menu.component.html.
+- Update menu.component.ts and app.menu.component.html.
 - Update layout css files.
 - Update theme css files.
 
 #### 1.2.0 to 5.0.0
 - Update theme css files.
 - Update layout css files.
-- Update app.menu.component.ts, app.menu.component.html and app.component.ts.
+- Update menu.component.ts, app.menu.component.html and app.component.ts.
 
 #### 1.1.0 to 1.2.0
 - Update theme css files.
-- Update app.menu.component.ts and app.component.ts.
+- Update menu.component.ts and app.component.ts.
 
 #### 1.0.1 to 1.1.0
 - Update layout css files.
 - Update theme css files.
-- Update AppSubmenu component in app.menu.component.ts.
+- Update AppSubmenu component in menu.component.ts.
 
 #### 1.0.0 to 1.0.1
 - Includes version updates to PrimeNG 4, no change required.

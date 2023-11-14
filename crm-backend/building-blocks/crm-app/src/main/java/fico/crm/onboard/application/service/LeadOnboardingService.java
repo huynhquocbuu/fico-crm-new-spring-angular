@@ -14,16 +14,11 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class LeadOnboardingService implements LeadOnboardingUseCase {
-    private ProcessEnginePort processEnginePort;
-    LeadOnboardingService(
+    private final ProcessEnginePort processEnginePort;
+    public LeadOnboardingService(
             @Qualifier("ProcessEnginePort4LeadOnboard") ProcessEnginePort processEnginePort){
         this.processEnginePort = processEnginePort;
     }
-    @Override
-    public void callCustomer(String leadId) {
-
-    }
-
     @Override
     public ProcessExecuteOutput startOnboarding(StartOnboarding input) {
         String processInstance = processEnginePort

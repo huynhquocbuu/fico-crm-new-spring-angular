@@ -7,8 +7,8 @@ import {PrimeNGConfig} from "primeng/api";
   //styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  //title = 'crm-frontend';
-  menu = 'slim';
+  //menu = 'slim';
+  menu = 'static';
 
   layout = 'default';
 
@@ -17,9 +17,8 @@ export class AppComponent implements OnInit {
   inputStyle = 'outlined';
 
   ripple: boolean;
-  constructor(private primengConfig: PrimeNGConfig){
 
-  }
+  constructor(private primengConfig: PrimeNGConfig) { }
 
   ngOnInit() {
     this.primengConfig.ripple = true;

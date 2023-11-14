@@ -6,7 +6,6 @@ import fico.crm.onboard.domain.StartOnboarding;
 import fico.crm.shared.dtos.ProcessExecuteOutput;
 
 public interface LeadOnboardingUseCase {
-    void callCustomer(String leadId);
     ProcessExecuteOutput startOnboarding(StartOnboarding input);
     ProcessExecuteOutput callCustomer(CallCustomer input) throws BadExecuteProcessException;
 }
