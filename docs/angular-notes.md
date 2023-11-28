@@ -34,3 +34,5 @@
 ## create ProductService:  ng g service demo/services/product
 
 ## create ThemeConfigComponent: ng g c shared/components/theme-config
+
+##note
